@@ -1,0 +1,35 @@
+# EXAMPLE WRITE OUT
+
+# For drop stick Example (2 Part Ruleset)
+
+DROP minecraft:stick 500 (ACTION BLOCK)
+ ON Twitch Follow (EVENT BLOCK)
+(NO PREDICATION PART I.E. WITH/ON)
+
+# For drop diamond Example (3 Part Ruleset)
+
+DROP minecraft(Can probably use modpacks):diamond_block 1 (ACTION BLOCK)
+ ON Donation (EVENT BLOCK)
+ WITH amount IN RANGE [1,200] < Range would be 1-200 in USD Dollar Amount (PREDICATION BLOCK)
+
+
+
+
+#* In the case of using modpacks, instead of the minecraft prefix (Points to where to get item ID)
+use modpack name as prefix then Item ID from the modpack
+
+EXAMPLE:
+
+more_ores_more_gems:titanium 1 | Gives out 1 Titanium ore (https://www.curseforge.com/minecraft/mc-mods/more-ores-more-gems)
+
+ores_ores_ores:compressed_stone 1 | Gives out 1 Compressed Stone (https://www.curseforge.com/minecraft/mc-mods/ores-ores-ores)
+
+*#
+
+
+
+# 3 Part Event using Channel Points (Streamlabs/StreamElements)
+DROP minecraft:tnt 2
+ ON Twitch Channel Point Reward
+ WITH title IS %My Test Reward% (ACTUAL NAME OF REWARD IN TWITCH - Case-sensitive)
+
